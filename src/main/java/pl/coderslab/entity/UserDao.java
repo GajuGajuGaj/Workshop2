@@ -90,7 +90,7 @@ public class UserDao {
     tmpUsers[users.length] = u; // Dodajemy obiekt na ostatniej pozycji.
     return tmpUsers; // Zwracamy nową tablicę.
   }
-    public String hashPassword(String password) {
+  public String hashPassword(String password) {
     return BCrypt.hashpw(password, BCrypt.gensalt());
   }
 }
